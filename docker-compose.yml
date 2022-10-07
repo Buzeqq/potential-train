@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: mysql:8
+    container_name: prestashop-db
+    command: --default-authentication-plugin=caching_sha2_password
+    environment:
+      - MYSQL_DATABASE=prestashop
+      - MYSQL_ROOT_PASSWORD=prestashop
+    ports:
+      - 3306:3306
+    networks:
+      - prestashop
+
+  prestashop:
+    image: prestashop/prestashop:1.7
+    container_name: prestashop
+    environment:
+      - DB_SERVER=db
+    ports:
+      - 8080:80
+    volumes:
+      - ./prestashop:/var/www/html:rw
+    networks:
+      - prestashop
+
+networks:
+  prestashop:
