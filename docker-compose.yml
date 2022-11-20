@@ -17,9 +17,11 @@ services:
     depends_on:
       - mariadb
     environment:
+      - PS_DEV_MODE=1
       - DB_SERVER=mariadb
       - DB_USER=root
       - DB_PASSWD=prestashop
+      - PS_INSTALL_AUTO=0
     ports:
       - 8080:80
       - 443:443
