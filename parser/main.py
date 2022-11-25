@@ -4,22 +4,13 @@ import logging
 
 
 def get_element(p, keys: [str]):
-    keys_len = len(keys)
-    if keys_len == 0:
+    if not keys:
         return ''
-    elif keys_len == 1:
-        return p[keys[0]]
-    elif keys_len == 2:
-        if type(p[keys[0]]) is list:
-            if type(p[keys[0]][0]) is dict:
-                return p[keys[0]][0][keys[1]]
-            else:
-                logging.warning(f'not a dict! - {p[keys[0]][0]}')
-                return ''
-        else:
-            return p[keys[0]][keys[1]]
-    elif keys_len == 3:
-        return p[keys[0]][keys[1]][keys[2]]
+    for key in keys:
+        if isinstance(p, list):
+            p = p[0]
+        p = p[key]
+    return p
 
 
 def parse_element(el):
@@ -33,8 +24,8 @@ def parse_element(el):
 # parsing ../scrapper/data.json into csv file
 def products_to_csv():
     logging.basicConfig(filename='logs.log', filemode='w+', level=logging.INFO, encoding='utf-8')
-    with open('products_import.csv', 'w+') as csv_file,\
-            open('../scrapper/data.json', 'r') as products_file,\
+    with open('products_import.csv', 'w+', encoding='utf-8', newline='') as csv_file,\
+            open('../scrapper/products.json', 'r', encoding='utf-8') as products_file,\
             open('data_labels.json', 'r') as labels_file:
         data_labels = json.load(labels_file)
         products = json.load(products_file)
