@@ -1,0 +1,14 @@
+{
+  "ID": ["id"],
+  "Active": ["include_in_side_menu"],
+  "Name": ["name"],
+  "Parent category": [],
+  "Root category": [],
+  "Description": [],
+  "Meta title": ["system_name"],
+  "Meta keywords": [],
+  "Meta description": [],
+  "Rewritten URL": ["url"],
+  "Image URL": [],
+  "ID / Name of shop": []
+}
