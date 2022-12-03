@@ -1,6 +1,27 @@
-version: '3.9'
+version: "3.9"
 
 services:
+  prestashop:
+    image: prestashop/prestashop
+    container_name: prestashop
+    depends_on:
+      - mariadb
+    environment:
+      - PS_DEV_MODE=1
+      - DB_SERVER=mariadb
+      - DB_PASSWD=prestashop
+      - PS_INSTALL_AUTO=1
+      - PS_DOMAIN=localhost
+      - PS_LANGUAGE=pl
+      - PS_COUNTRY=PL
+      - PS_FOLDER_ADMIN=admin-panel
+      - PS_ENABLE_SSL=1
+    ports:
+      - 8080:80
+      - 4433:443
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/ssl/apache2:/docker
 
   mariadb:
     image: mariadb
@@ -8,30 +29,17 @@ services:
     environment:
       - MYSQL_DATABASE=prestashop
       - MYSQL_ROOT_PASSWORD=prestashop
-    networks:
-      - prestashop
+    volumes:
+      - ./docker/ssl/sql:/docker
 
-  prestashop:
-    image: prestashop/prestashop:1.7
-    container_name: prestashop
+  adminpanel:
+    image: phpmyadmin
+    container_name: prestashop-adminpanel
     depends_on:
       - mariadb
     environment:
-      - PS_DEV_MODE=1
-      - DB_SERVER=mariadb
-      - DB_USER=root
-      - DB_PASSWD=prestashop
-      - PS_INSTALL_AUTO=0
+      - PMA_ARBITRARY=1
+      - PMA_HOST=localhost
+      - PMA_PORT=3306
     ports:
-      - 8080:80
-      - 443:443
-    volumes:
-      - ./src:/var/www/html
-      - ./src/modules:/var/www/html/modules
-      - ./src/themes:/var/www/html/themes
-      - ./src/override:/var/www/html/override
-    networks:
-      - prestashop
-
-networks:
-  prestashop:
+      - 8081:80
