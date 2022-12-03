@@ -3,12 +3,12 @@
     "Active": ["colorOptions", "isActive"],
     "Name": ["name"],
     "Categories": ["data", "category", "name"],
-    "Price tax excluded": [],
+    "Price tax excluded": ["price"],
     "Tax rules ID": [],
-    "Wholesale price": ["price"],
-    "On sale": ["data", "hasDiscount"],
-    "Discount amount": ["final_price"],
-    "Discount percent": [],
+    "Wholesale price": [],
+    "On sale": ["has_discount"],
+    "Discount amount": [],
+    "Discount percent": ["dynamicStickerText"],
     "Discount from": [],
     "Discount to": [],
     "Reference": [],
@@ -64,5 +64,5 @@
     "Advanced stock management": [],
     "Depends On Stock": [],
     "Warehouse": [],
-    "Acessories": []
+    "Accessories": []
 }
