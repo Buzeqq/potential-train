@@ -4,4 +4,4 @@
 To run as localhost use: `docker-compose up -d`
 
 ## SSL
-To enable ssl use: `scripts/ssl.sh` whem all containers are running.
+To enable ssl use: `scripts/ssl.sh` when all containers are running.
