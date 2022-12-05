@@ -35,7 +35,7 @@
     "Summary": [],
     "Description": ["data", "description"],
     "Tags": [],
-    "Meta title": [],
+    "Meta title": ["name"],
     "Meta keywords": ["data", "splitAdditionalDescription", "featuresInDescription"],
     "Meta description": [],
     "URL rewritten": ["url"],
