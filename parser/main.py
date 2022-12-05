@@ -1,6 +1,7 @@
 import csv
 import json
 import random
+from utils import cut_combinations
 
 
 def get_element(p, keys: [str]):
@@ -144,3 +145,4 @@ def categories_to_csv():
 if __name__ == "__main__":
     categories_to_csv()
     products_to_csv()
+    cut_combinations()
