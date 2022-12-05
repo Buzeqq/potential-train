@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "website-tests"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Dajczak <jakub.dajczak@usable.pl>"]
+readme = "README.md"
+packages = [{include = "website_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+webdriver-manager = "^3.8.5"
+selenium = "^4.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
