@@ -16,6 +16,8 @@ services:
       - PS_COUNTRY=PL
       - PS_FOLDER_ADMIN=admin-panel
       - PS_ENABLE_SSL=1
+      - ADMIN_MAIL=admin@admin.pl
+      - ADMIN_PASSWD=admin123
     ports:
       - 8080:80
       - 4433:443
@@ -31,6 +33,7 @@ services:
       - MYSQL_ROOT_PASSWORD=prestashop
     volumes:
       - ./docker/ssl/sql:/docker
+      - ./docker/db:/docker-entrypoint-initdb.d
 
   adminpanel:
     image: phpmyadmin
