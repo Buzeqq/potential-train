@@ -2,9 +2,8 @@
 name = "website-tests"
 version = "0.1.0"
 description = ""
-authors = ["Jakub Dajczak <jakub.dajczak@usable.pl>"]
+authors = ["qaziok <72215548+qaziok@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "website_tests"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

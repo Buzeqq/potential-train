@@ -41,7 +41,7 @@ class Customer:
         self.driver.get(self.WEBSITE)
 
 
-    def find_category(self):
+    def __find_category(self):
         try:
             WebDriverWait(self.driver, 1).until(lambda x: x.find_element(By.CLASS_NAME,'category'))
         except TimeoutException:
@@ -51,19 +51,19 @@ class Customer:
 
         return choice([category for category in categories if category.text])
 
-    def find_subcategory(self):
+    def __find_subcategory(self):
         subcategories = self.driver.find_elements(By.CLASS_NAME,'subcategory-name')
         if subcategories:
             return choice(subcategories)
         return None
 
-    def find_product(self):
+    def __find_product(self):
         products = self.driver.find_elements(By.CLASS_NAME,'product-miniature')
         if products:
             return choice(products)
         return None       
 
-    def buy_product(self, quantity):
+    def __buy_product(self, quantity):
         urls = set()
         urls.add(self.driver.current_url)
 
@@ -97,15 +97,15 @@ class Customer:
 
     def buying_spree(self, quantity, products_range=(1,1)):
         for i in range(quantity):
-            with Website(self.driver, self.find_category()):
-                subcategory = self.find_subcategory()
+            with Website(self.driver, self.__find_category()):
+                subcategory = self.__find_subcategory()
                 if subcategory:
                     with Website(self.driver, subcategory):
-                        with Website(self.driver, self.find_product()):
-                            self.buy_product(randint(*products_range))
+                        with Website(self.driver, self.__find_product()):
+                            self.__buy_product(randint(*products_range))
                 else:
-                    with Website(self.driver, self.find_product()):
-                        self.buy_product(randint(*products_range))
+                    with Website(self.driver, self.__find_product()):
+                        self.__buy_product(randint(*products_range))
 
     def shopping_cart(self):
         self.driver.find_element(By.CLASS_NAME,'cart-preview').click()
