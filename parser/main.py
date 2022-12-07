@@ -41,11 +41,11 @@ def generate_combinations(prod_data, combination_writer):
             "Low stock level": 2,
             "Image URLs": "*".join([c['previewPhoto']])
         }
-        attr = ":".join(["Color", "Drop-down list", str(pos + 1)])
-        val = ":".join([COLORS[c['color']['name']], str(pos + 1)])
-        for s in prod_data['sizes']:
-            row['Attribute'] = attr + '*' + ":".join(["Size", "Drop-down list", str(pos + 1 + len(prod_data['colorOptions']))])
-            row['Value'] = val + '*' + ":".join([s['sizeName'], str(pos + 1 + len(prod_data['colorOptions']))])
+        attr = ":".join(["Kolor", "Kolor lub tekstura", "2"])
+        val = ":".join([[c['color']['name'].capitalize()], str(pos + 1)])
+        for pos_size, s in enumerate(prod_data['sizes']):
+            row['Attribute'] = attr + '*' + ":".join(["Rozmiar", "Lista rozwijalna", "1"])
+            row['Value'] = val + '*' + ":".join([s['sizeName'], str(pos_size + 1)])
             row['Quantity'] = random.randint(1, 10)
             if s['stock']:
                 combination_writer.writerow(list(row.values()))
