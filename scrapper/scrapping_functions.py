@@ -23,11 +23,17 @@ async def scrap(session, website_url, *, script_fragment, data_pattern, data_bra
 
 async def find_script(html, script):
     checker = lambda x: script in x.text
-    return list(filter(checker, html.find_all('script')))[0]
+    filtered = list(filter(checker, html.find_all('script')))
+    if filtered:
+        return filtered[0]
+    return None
 
 
 async def get_json_data(script, pattern, brackets):
-    hmm = re.findall(pattern, script.text)[0]
+    if script is None:
+        hmm = ''
+    else:
+        hmm = re.findall(pattern, script.text)[0]
     return json.loads(f"{brackets[0]}{hmm}{brackets[1]}")
 
 
