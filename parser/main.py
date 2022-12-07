@@ -42,7 +42,8 @@ def generate_combinations(prod_data, combination_writer):
             "Image URLs": "*".join([c['previewPhoto']])
         }
         attr = ":".join(["Kolor", "Kolor lub tekstura", "2"])
-        val = ":".join([[c['color']['name'].capitalize()], str(pos + 1)])
+        val = ":".join([c['color']['name'].capitalize(), str(pos + 1)])
+
         for pos_size, s in enumerate(prod_data['sizes']):
             row['Attribute'] = attr + '*' + ":".join(["Rozmiar", "Lista rozwijalna", "1"])
             row['Value'] = val + '*' + ":".join([s['sizeName'], str(pos_size + 1)])
@@ -69,8 +70,8 @@ def set_product_fields(csv_data, prod_data):
     csv_data['Available for order'] = 1
     csv_data['Quantity'] = random.randint(1, 10) if prod_data['colorOptions'][0]['isInStock'] else 0
     csv_data['Low stock level'] = 2
-    csv_data['Text when in stock'] = "Product available"
-    csv_data['Text when backorder allowed'] = "Product out of stock"
+    csv_data['Text when in stock'] = "Produkt dostępny"
+    csv_data['Text when backorder allowed'] = "Produkt wyprzedany"
     # available values: both, catalog, search, none
     csv_data['Visibility'] = "both"
     # 1: PL Standard Rate (23%)
