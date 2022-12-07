@@ -43,6 +43,7 @@ def generate_combinations(prod_data, combination_writer):
         }
         attr = ":".join(["Kolor", "Kolor lub tekstura", "2"])
         val = ":".join([c['color']['name'].capitalize(), str(pos + 1)])
+
         for pos_size, s in enumerate(prod_data['sizes']):
             row['Attribute'] = attr + '*' + ":".join(["Rozmiar", "Lista rozwijalna", "1"])
             row['Value'] = val + '*' + ":".join([s['sizeName'], str(pos_size + 1)])
