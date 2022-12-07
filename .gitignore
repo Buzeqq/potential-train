@@ -32,6 +32,10 @@ src/download/*
 
 # Images
 src/img/*
+!src/img/logo-*.png
+!src/img/logo-*.jpg
+!src/img/logo_mail-*.png
+!src/img/logo_mail-*.jpg
 !src/img/.htaccess
 !src/img/index.php
 !src/img/404.gif
@@ -131,7 +135,6 @@ src/app/config/config.php
 
 # Themes, modules and overrides
 
-src/modules/*
 src/override/*
 src/themes/*/
 src/themes/classic

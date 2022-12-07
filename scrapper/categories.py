@@ -12,7 +12,7 @@ async def main():
         categories = await scrap_categories(session)
 
         # mezczyzna/ubrania
-        categories_to_scrap = categories[2]['children'][0]['children']
+        categories_to_scrap = categories[3]['children'][0]['children']
 
         subpages_tasks = []
         for item in categories_to_scrap:
@@ -36,11 +36,14 @@ async def main():
         products_data = await asyncio.gather(*products_tasks)
 
         to_save = {'data': []}
+        product_without_data = 0
 
         for products, subpages, category in zip(products_data, subpages_data, categories_to_scrap):
             category_copy = category.copy()
             category_copy.pop('children', None)
             for product, subpage in zip(products, subpages):
+                if 'description' not in product:
+                    product_without_data += 1
                 product['category'] = category_copy
                 product.pop('recommended', None)
                 subpage['data'] = product
@@ -50,10 +53,12 @@ async def main():
             json.dump(to_save, f, indent=4, ensure_ascii=False)
 
         with open('categories.json', 'w', encoding='utf-8') as f:
-            json.dump(categories[2]['children'][0], f, indent=4, ensure_ascii=False)
+            json.dump(categories[3]['children'][0], f, indent=4, ensure_ascii=False)
 
         print("Statistics:")
         print("Total products: ", len(to_save['data']))
+        print("Products without data: ", product_without_data)
+
 
 if __name__ == '__main__':
     start = time.time()
