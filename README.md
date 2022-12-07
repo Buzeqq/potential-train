@@ -7,4 +7,4 @@ To run use: `sudo docker-compose up -d`
 To enable ssl use: `scripts/ssl.sh` when all containers are running and after shop installation.
 
 ## Prestashop configuration synchronization
-To synchronize settings after shop is up, go to `phpMyAdmin -> prestashop database -> import` and import file from `docker/db`
+To synchronize settings after shop is up use `init-db.sh`.
