@@ -1,2 +1,4 @@
 *.json
+!categories.json
+!products.json
 /.idea
