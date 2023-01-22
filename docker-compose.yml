@@ -2,12 +2,26 @@ version: "3.9"
 
 services:
   prestashop:
-    image: prestashop/prestashop
+    build: 
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        - USER_ID=${USER_ID:-1000}
+        - GROUP_ID=${GROUP_ID:-1000}
+
     container_name: prestashop
     depends_on:
       - mariadb
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 2
+        window: 140s
     environment:
-      - PS_DEV_MODE=1
+      - DISABLE_MAKE=0
+      - PS_DEV_MODE=0
+      - PS_DEMO_MODE=0
       - DB_SERVER=mariadb
       - DB_PASSWD=prestashop
       - PS_INSTALL_AUTO=1
@@ -19,11 +33,7 @@ services:
       - ADMIN_MAIL=admin@admin.pl
       - ADMIN_PASSWD=admin123
     ports:
-      - 8080:80
       - 4433:443
-    volumes:
-      - ./src:/var/www/html
-      - ./docker/ssl/apache2:/docker
 
   mariadb:
     image: mariadb
@@ -34,6 +44,12 @@ services:
     volumes:
       - ./docker/ssl/sql:/docker
       - ./docker/db:/docker-entrypoint-initdb.d:ro
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 2
+        window: 140s
 
   adminpanel:
     image: phpmyadmin

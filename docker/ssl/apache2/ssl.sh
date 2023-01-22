@@ -13,6 +13,7 @@ a2enmod ssl > /dev/null 2>&1
 echo "SSL Configuration [4/5]: Enabled SSL for apache2..."
 
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 if [[ $(apache2ctl configtest 2>&1) == "Syntax OK" ]]
 then
     service apache2 reload > /dev/null 2>&1
