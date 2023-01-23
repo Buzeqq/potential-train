@@ -169,7 +169,7 @@ src/install
 # src/app/config/parameters.php
 # src/phpunit.xml
 # src/var/*
-!src/var/cache
+# !src/var/cache
 src/var/cache/*
 !src/var/cache/.gitkeep
 !src/var/logs
