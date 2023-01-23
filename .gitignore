@@ -115,7 +115,7 @@ src/cache/*
 # !src/admin/themes/new-theme/public/theme.rtlfix
 # !src/admin/themes/default/public/theme.rtlfix
 
-# src/themes/*/cache/*
+src/themes/*/cache/*
 # src/themes/core.js.map
 # src/themes/core.js
 
