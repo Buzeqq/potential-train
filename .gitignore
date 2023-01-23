@@ -10,7 +10,7 @@ src/*.swo
 src/.cache/
 
 # Cache
-# src/cache/*
+src/cache/*
 !src/cache/.htaccess
 !src/cache/cachefs/index.php
 !src/cache/deprecated.txt
@@ -170,13 +170,13 @@ src/install
 # src/phpunit.xml
 # src/var/*
 # !src/var/cache
-# src/var/cache/*
+src/var/cache/*
 # !src/var/cache/.gitkeep
 # !src/var/logs
-# src/var/logs/*
+src/var/logs/*
 # !src/var/logs/.gitkeep
 # !src/var/sessions
-# src/var/sessions/*
+src/var/sessions/*
 # !src/var/sessions/.gitkeep
 # !src/var/SymfonyRequirements.php
 # !src/var/modules

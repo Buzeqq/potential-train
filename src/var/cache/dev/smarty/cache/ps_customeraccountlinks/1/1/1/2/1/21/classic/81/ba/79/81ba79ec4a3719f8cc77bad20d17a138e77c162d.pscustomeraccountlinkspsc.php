@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-01-23 23:20:28
+/* Smarty version 4.2.1, created on 2023-01-23 23:29:53
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63cf082c3483b5_07294496',
+  'unifunc' => 'content_63cf0a61187921_36891051',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,13 +18,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_63cf082c3483b5_07294496 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf0a61187921_36891051 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/var/www/html/var/cache/dev/smarty/compile/classiclayouts_layout_full_width_tpl/d2/2d/85/d22d851f6d7c12eb35c1c34c8e84baa801a8cea2_2.file.helpers.tpl.php',
     'uid' => 'd22d851f6d7c12eb35c1c34c8e84baa801a8cea2',
-    'call_name' => 'smarty_template_function_renderLogo_102465706463cf082c215889_31792374',
+    'call_name' => 'smarty_template_function_renderLogo_106444353863cf0a610224e7_35685052',
   ),
 ));
 ?><!-- begin /var/www/html/themes/classic/modules/ps_customeraccountlinks/ps_customeraccountlinks.tpl -->

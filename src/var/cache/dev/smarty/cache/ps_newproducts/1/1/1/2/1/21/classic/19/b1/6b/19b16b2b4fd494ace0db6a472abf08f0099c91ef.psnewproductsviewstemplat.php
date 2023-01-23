@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-01-23 23:20:28
+/* Smarty version 4.2.1, created on 2023-01-23 23:29:52
   from 'module:psnewproductsviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63cf082c1d03f3_25164705',
+  'unifunc' => 'content_63cf0a60f19d85_33014156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -27,6 +27,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
       1 => 1671890849,
       2 => 'file',
     ),
+    'e64c699d70ea897ec9ed5b992b73872ad92542b6' => 
+    array (
+      0 => '/var/www/html/themes/classic/templates/catalog/_partials/variant-links.tpl',
+      1 => 1671890849,
+      2 => 'file',
+    ),
     '0724df70e9113f9ffcf0299fe2d091b4d46089e2' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/product-flags.tpl',
@@ -36,7 +42,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_63cf082c1d03f3_25164705 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf0a60f19d85_33014156 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_newproducts/views/templates/hook/ps_newproducts.tpl -->
 <section class="featured-products clearfix mt-3">
   <h2 class="h2 products-section-title text-uppercase">
@@ -45,156 +51,6 @@ function content_63cf082c1d03f3_25164705 (Smarty_Internal_Template $_smarty_tpl)
   
 
 <div class="products">
-            
-<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="18" data-id-product-attribute="36">
-    <div class="thumbnail-container">
-      <div class="thumbnail-top">
-        
-                      <a href="https://localhost:4433/index.php?id_product=18&amp;id_product_attribute=36&amp;rewrite=hummingbird-notebook&amp;controller=product&amp;id_lang=2#/22-paper_type-ruled" class="thumbnail product-thumbnail">
-              <img
-                src="https://localhost:4433/img/p/2/0/20-home_default.jpg"
-                alt="Mountain fox notebook"
-                loading="lazy"
-                data-full-size-image-url="https://localhost:4433/img/p/2/0/20-large_default.jpg"
-                width="250"
-                height="250"
-              />
-            </a>
-                  
-
-        <div class="highlighted-informations no-variants">
-          
-            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
-              <i class="material-icons search">&#xE8B6;</i> Quick view
-            </a>
-          
-
-          
-                      
-        </div>
-      </div>
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title"><a href="https://localhost:4433/index.php?id_product=18&amp;id_product_attribute=36&amp;rewrite=hummingbird-notebook&amp;controller=product&amp;id_lang=2#/22-paper_type-ruled" content="https://localhost:4433/index.php?id_product=18&amp;id_product_attribute=36&amp;rewrite=hummingbird-notebook&amp;controller=product&amp;id_lang=2#/22-paper_type-ruled">Hummingbird notebook</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="price" aria-label="Price">
-                                                  €12.90
-                              </span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-<div class="product-list-reviews" data-id="18" data-url="https://localhost:4433/index.php?fc=module&module=productcomments&controller=CommentGrade&id_lang=2">
-  <div class="grade-stars small-stars"></div>
-  <div class="comments-nb"></div>
-</div>
-
-<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-        
-      </div>
-
-      
-    <ul class="product-flags js-product-flags">
-                    <li class="product-flag new">New</li>
-            </ul>
-
-    </div>
-  </article>
-</div>
-
-            
-<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="19" data-id-product-attribute="0">
-    <div class="thumbnail-container">
-      <div class="thumbnail-top">
-        
-                      <a href="https://localhost:4433/index.php?id_product=19&amp;rewrite=customizable-mug&amp;controller=product&amp;id_lang=2" class="thumbnail product-thumbnail">
-              <img
-                src="https://localhost:4433/img/p/2/2/22-home_default.jpg"
-                alt="Customizable mug"
-                loading="lazy"
-                data-full-size-image-url="https://localhost:4433/img/p/2/2/22-large_default.jpg"
-                width="250"
-                height="250"
-              />
-            </a>
-                  
-
-        <div class="highlighted-informations no-variants">
-          
-            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
-              <i class="material-icons search">&#xE8B6;</i> Quick view
-            </a>
-          
-
-          
-                      
-        </div>
-      </div>
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title"><a href="https://localhost:4433/index.php?id_product=19&amp;rewrite=customizable-mug&amp;controller=product&amp;id_lang=2" content="https://localhost:4433/index.php?id_product=19&amp;rewrite=customizable-mug&amp;controller=product&amp;id_lang=2">Customizable mug</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="price" aria-label="Price">
-                                                  €13.90
-                              </span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-<div class="product-list-reviews" data-id="19" data-url="https://localhost:4433/index.php?fc=module&module=productcomments&controller=CommentGrade&id_lang=2">
-  <div class="grade-stars small-stars"></div>
-  <div class="comments-nb"></div>
-</div>
-
-<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-        
-      </div>
-
-      
-    <ul class="product-flags js-product-flags">
-                    <li class="product-flag new">New</li>
-            </ul>
-
-    </div>
-  </article>
-</div>
-
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
   <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1">
@@ -649,6 +505,156 @@ function content_63cf082c1d03f3_25164705 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
 <div class="product-list-reviews" data-id="6" data-url="https://localhost:4433/index.php?fc=module&module=productcomments&controller=CommentGrade&id_lang=2">
+  <div class="grade-stars small-stars"></div>
+  <div class="comments-nb"></div>
+</div>
+
+<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+        
+      </div>
+
+      
+    <ul class="product-flags js-product-flags">
+                    <li class="product-flag new">New</li>
+            </ul>
+
+    </div>
+  </article>
+</div>
+
+            
+<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
+  <article class="product-miniature js-product-miniature" data-id-product="7" data-id-product-attribute="0">
+    <div class="thumbnail-container">
+      <div class="thumbnail-top">
+        
+                      <a href="https://localhost:4433/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product&amp;id_lang=2" class="thumbnail product-thumbnail">
+              <img
+                src="https://localhost:4433/img/p/7/7-home_default.jpg"
+                alt="Mug The adventure begins"
+                loading="lazy"
+                data-full-size-image-url="https://localhost:4433/img/p/7/7-large_default.jpg"
+                width="250"
+                height="250"
+              />
+            </a>
+                  
+
+        <div class="highlighted-informations no-variants">
+          
+            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
+              <i class="material-icons search">&#xE8B6;</i> Quick view
+            </a>
+          
+
+          
+                      
+        </div>
+      </div>
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title"><a href="https://localhost:4433/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product&amp;id_lang=2" content="https://localhost:4433/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product&amp;id_lang=2">Mug The adventure begins</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="price" aria-label="Price">
+                                                  €11.90
+                              </span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+<div class="product-list-reviews" data-id="7" data-url="https://localhost:4433/index.php?fc=module&module=productcomments&controller=CommentGrade&id_lang=2">
+  <div class="grade-stars small-stars"></div>
+  <div class="comments-nb"></div>
+</div>
+
+<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+        
+      </div>
+
+      
+    <ul class="product-flags js-product-flags">
+                    <li class="product-flag new">New</li>
+            </ul>
+
+    </div>
+  </article>
+</div>
+
+            
+<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
+  <article class="product-miniature js-product-miniature" data-id-product="8" data-id-product-attribute="0">
+    <div class="thumbnail-container">
+      <div class="thumbnail-top">
+        
+                      <a href="https://localhost:4433/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product&amp;id_lang=2" class="thumbnail product-thumbnail">
+              <img
+                src="https://localhost:4433/img/p/8/8-home_default.jpg"
+                alt="Mug Today is a good day"
+                loading="lazy"
+                data-full-size-image-url="https://localhost:4433/img/p/8/8-large_default.jpg"
+                width="250"
+                height="250"
+              />
+            </a>
+                  
+
+        <div class="highlighted-informations no-variants">
+          
+            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
+              <i class="material-icons search">&#xE8B6;</i> Quick view
+            </a>
+          
+
+          
+                      
+        </div>
+      </div>
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title"><a href="https://localhost:4433/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product&amp;id_lang=2" content="https://localhost:4433/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product&amp;id_lang=2">Mug Today is a good day</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="price" aria-label="Price">
+                                                  €11.90
+                              </span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+<div class="product-list-reviews" data-id="8" data-url="https://localhost:4433/index.php?fc=module&module=productcomments&controller=CommentGrade&id_lang=2">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
