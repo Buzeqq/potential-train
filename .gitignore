@@ -26,12 +26,12 @@ src/cache/*
 !src/cache/tcpdf/index.php
 
 # Download
-src/download/*
-!src/download/.htaccess
-!src/download/index.php
+# src/download/*
+# !src/download/.htaccess
+# !src/download/index.php
 
 # Images
-src/img/*
+# src/img/*
 !src/img/logo-*.png
 !src/img/logo-*.jpg
 !src/img/logo_mail-*.png
@@ -76,99 +76,99 @@ src/img/*
 !src/img/tmp/index.php
 
 # Upload
-src/upload/*
+# src/upload/*
 !src/upload/index.php
 !src/upload/.htaccess
 
-src/docs/phpdoc-sf/
-src/*.hot-update.js
-src/*.hot-update.json
+# src/docs/phpdoc-sf/
+# src/*.hot-update.js
+# src/*.hot-update.json
 
-src/admin/autoupgrade/*
+# src/admin/autoupgrade/*
 !src/admin/autoupgrade/index.php
 !src/admin/autoupgrade/backup/index.php
 
-src/admin/backups/*
+# src/admin/backups/*
 !src/admin/backups/.htaccess
 
-src/admin/import/*
+# src/admin/import/*
 !src/admin/import/.htaccess
 !src/admin/import/index.php
 
-src/admin/export/*
+# src/admin/export/*
 !src/admin/export/.htaccess
 !src/admin/export/index.php
 
 # Downloaded RTL files
-src/admin/themes/default/css/bundle/default_rtl.css
-src/admin/themes/default/css/bundle/shared_rtl.css
-src/admin/themes/default/css/font_rtl.css
-src/admin/themes/default/css/overrides_rtl.css
-src/admin/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
-src/admin/themes/default/css/vendor/nv.d3_rtl.css
-src/admin/themes/default/css/vendor/titatoggle-min_rtl.css
-src/admin/themes/default/public/theme_rtl.css
-src/admin/themes/default/public/*
-src/admin/themes/new-theme/css/module/drop_rtl.css
-src/admin/themes/new-theme/css/right-sidebar_rtl.css
-src/admin/themes/new-theme/public/*
+# src/admin/themes/default/css/bundle/default_rtl.css
+# src/admin/themes/default/css/bundle/shared_rtl.css
+# src/admin/themes/default/css/font_rtl.css
+# src/admin/themes/default/css/overrides_rtl.css
+# src/admin/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
+# src/admin/themes/default/css/vendor/nv.d3_rtl.css
+# src/admin/themes/default/css/vendor/titatoggle-min_rtl.css
+# src/admin/themes/default/public/theme_rtl.css
+# src/admin/themes/default/public/*
+# src/admin/themes/new-theme/css/module/drop_rtl.css
+# src/admin/themes/new-theme/css/right-sidebar_rtl.css
+# src/admin/themes/new-theme/public/*
 !src/admin/themes/new-theme/public/theme.rtlfix
 !src/admin/themes/default/public/theme.rtlfix
 
 src/themes/*/cache/*
-src/themes/core.js.map
-src/themes/core.js
+# src/themes/core.js.map
+# src/themes/core.js
 
 # Install folder
 src/install
 
 # Config
-src/config/defines_custom.inc.php
-src/config/settings.inc.php
-src/config/settings.old.php
-src/config/xml/*
-src/config/themes/*
+# src/config/defines_custom.inc.php
+# src/config/settings.inc.php
+# src/config/settings.old.php
+# src/config/xml/*
+# src/config/themes/*
 !src/config/xml/themes/default.xml
-src/themes/*/config/settings_*.json
-src/app/config/parameters.old.yml
-src/app/config/config.php
+# src/themes/*/config/settings_*.json
+# src/app/config/parameters.old.yml
+# src/app/config/config.php
 
 # Themes, modules and overrides
 
-src/override/*
-src/themes/*/
-src/themes/classic
+# src/override/*
+# src/themes/*/
+# src/themes/classic
 !src/themes/_core
 !src/themes/_libraries
 
 # Translations and emails templates
 
-src/translations/*
+# src/translations/*
 !src/translations/default
-src/mails/*
+# src/mails/*
 !src/mails/themes/
 !src/mails/_partials/
-src/themes/default-bootstrap/lang/*
-src/themes/default-bootstrap/modules/*/translations/*.php
-src/themes/default-bootstrap/mails/*
+# src/themes/default-bootstrap/lang/*
+# src/themes/default-bootstrap/modules/*/translations/*.php
+# src/themes/default-bootstrap/mails/*
 !src/themes/default-bootstrap/mails/en/
-src/themes/default-bootstrap/modules/*/mails/*
+# src/themes/default-bootstrap/modules/*/mails/*
 !src/themes/default-bootstrap/modules/*/mails/en
 
 # MISC
 
-src/*sitemap.xml
-src/robots.txt
+# src/*sitemap.xml
+# src/robots.txt
 
 # Symfony
 
-src/bin/
-src/.web-server-pid
-src/app/Resources/geoip/GeoLite2-City.mmdb
-src/app/config/parameters.yml
-src/app/config/parameters.php
-src/phpunit.xml
-src/var/*
+# src/bin/
+# src/.web-server-pid
+# src/app/Resources/geoip/GeoLite2-City.mmdb
+# src/app/config/parameters.yml
+# src/app/config/parameters.php
+# src/phpunit.xml
+# src/var/*
 !src/var/cache
 src/var/cache/*
 !src/var/cache/.gitkeep
@@ -180,13 +180,13 @@ src/var/sessions/*
 !src/var/sessions/.gitkeep
 !src/var/SymfonyRequirements.php
 !src/var/modules
-src/var/modules/*
+# src/var/modules/*
 !src/var/modules/.gitkeep
-src/vendor/
-src/web/bundles/
+# src/vendor/
+# src/web/bundles/
 
 # Release creation
-src/tools/build/releases/*
+# src/tools/build/releases/*
 !src/tools/build/releases/.gitkeep
 
 # Docker configuration
