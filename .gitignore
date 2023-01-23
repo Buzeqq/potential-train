@@ -10,7 +10,7 @@ src/*.swo
 src/.cache/
 
 # Cache
-src/cache/*
+# src/cache/*
 !src/cache/.htaccess
 !src/cache/cachefs/index.php
 !src/cache/deprecated.txt
