@@ -96,6 +96,6 @@ else
     echo "\n* No init script found, let's continue..."
 fi
 
-rm -r /var/www/html/install
+rm -rf /var/www/html/install
 
 exec apache2-foreground
