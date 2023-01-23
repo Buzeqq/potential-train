@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2023-01-23 23:00:29
+/* Smarty version 4.2.1, created on 2023-01-23 23:09:30
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63cf037d470929_59127668',
+  'unifunc' => 'content_63cf059a710286_00693515',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63cf037d470929_59127668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cf059a710286_00693515 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_customersignin/ps_customersignin.tpl --><div id="_desktop_user_info">
   <div class="user-info">
     <?php if ($_smarty_tpl->tpl_vars['logged']->value) {?>

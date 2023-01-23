@@ -32,72 +32,72 @@ src/cache/*
 
 # Images
 # src/img/*
-!src/img/logo-*.png
-!src/img/logo-*.jpg
-!src/img/logo_mail-*.png
-!src/img/logo_mail-*.jpg
-!src/img/.htaccess
-!src/img/index.php
-!src/img/404.gif
-!src/img/app_icon.png
-!src/img/bg_500.png
-!src/img/bg_loader.png
-!src/img/favicon.ico
-!src/img/loader.gif
-!src/img/loadingAnimation.gif
-!src/img/logo.jpg
-!src/img/logo.png
-!src/img/logo_invoice.jpg
-!src/img/logo_stores.png
-!src/img/macFFBgHack.png
-!src/img/prestashop-avatar.png
-!src/img/prestashop@2x.png
-!src/img/preston-login-wink@2x.png
-!src/img/preston-login@2x.png
-!src/img/questionmark.png
-!src/img/genders/index.php
-!src/img/admin/index.php
-!src/img/c/index.php
-!src/img/cms/index.php
-!src/img/co/index.php
-!src/img/e/index.php
-!src/img/jquery-ui
-!src/img/l/index.php
-!src/img/m/index.php
-!src/img/os/index.php
-!src/img/p/index.php
-!src/img/pr/index.php
-!src/img/pr/default.jpg
-!src/img/s/index.php
-!src/img/scenes
-!src/img/st/index.php
-!src/img/su/index.php
-!src/img/t/index.php
-!src/img/tmp/index.php
+# !src/img/logo-*.png
+# !src/img/logo-*.jpg
+# !src/img/logo_mail-*.png
+# !src/img/logo_mail-*.jpg
+# !src/img/.htaccess
+# !src/img/index.php
+# !src/img/404.gif
+# !src/img/app_icon.png
+# !src/img/bg_500.png
+# !src/img/bg_loader.png
+# !src/img/favicon.ico
+# !src/img/loader.gif
+# !src/img/loadingAnimation.gif
+# !src/img/logo.jpg
+# !src/img/logo.png
+# !src/img/logo_invoice.jpg
+# !src/img/logo_stores.png
+# !src/img/macFFBgHack.png
+# !src/img/prestashop-avatar.png
+# !src/img/prestashop@2x.png
+# !src/img/preston-login-wink@2x.png
+# !src/img/preston-login@2x.png
+# !src/img/questionmark.png
+# !src/img/genders/index.php
+# !src/img/admin/index.php
+# !src/img/c/index.php
+# !src/img/cms/index.php
+# !src/img/co/index.php
+# !src/img/e/index.php
+# !src/img/jquery-ui
+# !src/img/l/index.php
+# !src/img/m/index.php
+# !src/img/os/index.php
+# !src/img/p/index.php
+# !src/img/pr/index.php
+# !src/img/pr/default.jpg
+# !src/img/s/index.php
+# !src/img/scenes
+# !src/img/st/index.php
+# !src/img/su/index.php
+# !src/img/t/index.php
+# !src/img/tmp/index.php
 
 # Upload
 # src/upload/*
-!src/upload/index.php
-!src/upload/.htaccess
+# !src/upload/index.php
+# !src/upload/.htaccess
 
 # src/docs/phpdoc-sf/
 # src/*.hot-update.js
 # src/*.hot-update.json
 
 # src/admin/autoupgrade/*
-!src/admin/autoupgrade/index.php
-!src/admin/autoupgrade/backup/index.php
+# !src/admin/autoupgrade/index.php
+# !src/admin/autoupgrade/backup/index.php
 
 # src/admin/backups/*
-!src/admin/backups/.htaccess
+# !src/admin/backups/.htaccess
 
 # src/admin/import/*
-!src/admin/import/.htaccess
-!src/admin/import/index.php
+# !src/admin/import/.htaccess
+# !src/admin/import/index.php
 
 # src/admin/export/*
-!src/admin/export/.htaccess
-!src/admin/export/index.php
+# !src/admin/export/.htaccess
+# !src/admin/export/index.php
 
 # Downloaded RTL files
 # src/admin/themes/default/css/bundle/default_rtl.css
@@ -112,8 +112,8 @@ src/cache/*
 # src/admin/themes/new-theme/css/module/drop_rtl.css
 # src/admin/themes/new-theme/css/right-sidebar_rtl.css
 # src/admin/themes/new-theme/public/*
-!src/admin/themes/new-theme/public/theme.rtlfix
-!src/admin/themes/default/public/theme.rtlfix
+# !src/admin/themes/new-theme/public/theme.rtlfix
+# !src/admin/themes/default/public/theme.rtlfix
 
 # src/themes/*/cache/*
 # src/themes/core.js.map
@@ -128,7 +128,7 @@ src/install
 # src/config/settings.old.php
 # src/config/xml/*
 # src/config/themes/*
-!src/config/xml/themes/default.xml
+# !src/config/xml/themes/default.xml
 # src/themes/*/config/settings_*.json
 # src/app/config/parameters.old.yml
 # src/app/config/config.php
@@ -138,22 +138,22 @@ src/install
 # src/override/*
 # src/themes/*/
 # src/themes/classic
-!src/themes/_core
-!src/themes/_libraries
+# !src/themes/_core
+# !src/themes/_libraries
 
 # Translations and emails templates
 
 # src/translations/*
-!src/translations/default
+# !src/translations/default
 # src/mails/*
-!src/mails/themes/
-!src/mails/_partials/
+# !src/mails/themes/
+# !src/mails/_partials/
 # src/themes/default-bootstrap/lang/*
 # src/themes/default-bootstrap/modules/*/translations/*.php
 # src/themes/default-bootstrap/mails/*
-!src/themes/default-bootstrap/mails/en/
+# !src/themes/default-bootstrap/mails/en/
 # src/themes/default-bootstrap/modules/*/mails/*
-!src/themes/default-bootstrap/modules/*/mails/en
+# !src/themes/default-bootstrap/modules/*/mails/en
 
 # MISC
 
@@ -171,23 +171,23 @@ src/install
 # src/var/*
 # !src/var/cache
 # src/var/cache/*
-!src/var/cache/.gitkeep
-!src/var/logs
+# !src/var/cache/.gitkeep
+# !src/var/logs
 # src/var/logs/*
-!src/var/logs/.gitkeep
-!src/var/sessions
+# !src/var/logs/.gitkeep
+# !src/var/sessions
 # src/var/sessions/*
-!src/var/sessions/.gitkeep
-!src/var/SymfonyRequirements.php
-!src/var/modules
+# !src/var/sessions/.gitkeep
+# !src/var/SymfonyRequirements.php
+# !src/var/modules
 # src/var/modules/*
-!src/var/modules/.gitkeep
+# !src/var/modules/.gitkeep
 # src/vendor/
 # src/web/bundles/
 
 # Release creation
 # src/tools/build/releases/*
-!src/tools/build/releases/.gitkeep
+# !src/tools/build/releases/.gitkeep
 
 # Docker configuration
 install.lock
