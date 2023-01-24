@@ -2,14 +2,7 @@ version: "3.9"
 
 services:
   prestashop:
-    build: 
-      context: .
-      dockerfile: ./docker/Dockerfile
-      args:
-        - USER_ID=${USER_ID:-1000}
-        - GROUP_ID=${GROUP_ID:-1000}
-
-    container_name: prestashop
+    image: qaziok/potential-train
     depends_on:
       - mariadb
     deploy:
@@ -33,16 +26,14 @@ services:
       - ADMIN_MAIL=admin@admin.pl
       - ADMIN_PASSWD=admin123
     ports:
-      - 4433:443
+      - 18467:443
 
   mariadb:
     image: mariadb
-    container_name: prestashop-db
     environment:
       - MYSQL_DATABASE=prestashop
       - MYSQL_ROOT_PASSWORD=prestashop
     volumes:
-      - ./docker/ssl/sql:/docker
       - ./docker/db:/docker-entrypoint-initdb.d:ro
     deploy:
       restart_policy:
@@ -50,15 +41,3 @@ services:
         delay: 5s
         max_attempts: 2
         window: 140s
-
-  adminpanel:
-    image: phpmyadmin
-    container_name: prestashop-adminpanel
-    depends_on:
-      - mariadb
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=localhost
-      - PMA_PORT=3306
-    ports:
-      - 8081:80
