@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 webdriver-manager = "^3.8.5"
 selenium = "^4.7.2"
+faker = "^16.6.0"
 
 
 [build-system]
