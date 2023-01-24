@@ -3,7 +3,7 @@
     <name>statssales</name>
     <displayName><![CDATA[Sprzedaż i zam&oacute;wienia]]></displayName>
     <version><![CDATA[2.1.0]]></version>
-    <description><![CDATA[Rozbuduj swoje statystyki, dodaj graficzną prezentację rozwoju twoich sprzedaży i zam&oacute;wień.]]></description>
+    <description><![CDATA[Enrich your stats, add graphics presenting the evolution of your sales and orders.]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[administration]]></tab>
     <is_configurable>0</is_configurable>

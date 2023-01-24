@@ -3,7 +3,7 @@
     <name>ps_brandlist</name>
     <displayName><![CDATA[Lista marek]]></displayName>
     <version><![CDATA[1.0.3]]></version>
-    <description><![CDATA[Wyświetl swoje marki z twojego katalogu i pozw&oacute;l odwiedzającym tw&oacute;j sklep wyszukiwać produkty po markach.]]></description>
+    <description><![CDATA[Display your brands on your catalog and allow your visitors to filter their search by brand.]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>

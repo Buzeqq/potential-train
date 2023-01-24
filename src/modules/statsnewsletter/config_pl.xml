@@ -3,7 +3,7 @@
     <name>statsnewsletter</name>
     <displayName><![CDATA[Newsletter]]></displayName>
     <version><![CDATA[2.0.3]]></version>
-    <description><![CDATA[Rozbuduj swoje statystyki, wyświetl graf pokazujący ilość rejestracji do newslettera.]]></description>
+    <description><![CDATA[Enrich your stats, display a graph showing newsletter registrations.]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[analytics_stats]]></tab>
     <is_configurable>0</is_configurable>

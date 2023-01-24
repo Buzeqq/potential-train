@@ -3,7 +3,7 @@
     <name>ps_customersignin</name>
     <displayName><![CDATA[Łącze klienta &bdquo;Zaloguj się&quot;]]></displayName>
     <version><![CDATA[2.0.5]]></version>
-    <description><![CDATA[Spraw, aby twoi klienci twojego sklepu poczuli się jak w domu, zaproś ich do rejestracji!]]></description>
+    <description><![CDATA[Make your customers feel at home on your store, invite them to sign in!]]></description>
     <author><![CDATA[PrestaShop]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>
