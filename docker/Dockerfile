@@ -9,8 +9,6 @@ RUN groupmod -g $GROUP_ID www-data \
 
 COPY ./docker/wait-for-it.sh /tmp/
 COPY ./docker/docker_run_git.sh /tmp/
-#COPY ./docker/000-default.conf /tmp/
-#COPY ./docker/apache2.conf /tmp/
 
 RUN mkdir -p /var/www/.npm
 RUN chown -R www-data:www-data /var/www/.npm
