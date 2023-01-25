@@ -74,6 +74,13 @@ if [ ! -f ./config/settings.inc.php ]; then
     fi
 else
     echo "\n* PrestaShop Core already installed...";
+
+    echo "\n* Removing database schema...";
+    mysql -h $DB_SERVER -P $DB_PORT -u $DB_USER -p$DB_PASSWD -e "drop database if exists $DB_NAME;"
+    echo "\n* Creating database $DB_NAME..."
+    mysqladmin -h $DB_SERVER -P $DB_PORT -u $DB_USER -p$DB_PASSWD create $DB_NAME --force;
+    echo "\n* Importing database schema..."
+    zcat /docker/db/backup.sql.gz | mysql -h $DB_SERVER -P $DB_PORT -u $DB_USER -p$DB_PASSWD $DB_NAME
 fi
 
 if [ $PS_DEMO_MODE -ne 0 ]; then

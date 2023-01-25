@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   prestashop:
-    build: .
+    image: qaziok/potential-train
     depends_on:
       - mariadb
     deploy:
@@ -11,13 +11,11 @@ services:
         delay: 5s
         max_attempts: 2
         window: 140s
-    volumes:
-      - ./src:/var/www/html
     environment:
       - DISABLE_MAKE=0
       - PS_DEV_MODE=0
       - PS_DEMO_MODE=0
-      - DB_SERVER=be_184347_mariadb
+      - DB_SERVER=mariadb
       - DB_NAME=prestashop
       - DB_PORT=3306
       - DB_PASSWD=prestashop
@@ -35,7 +33,6 @@ services:
       - potential-train
 
   mariadb:
-    container_name: be_184347_mariadb
     image: mariadb
     environment:
       - MYSQL_DATABASE=prestashop

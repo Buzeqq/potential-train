@@ -20,6 +20,7 @@ RUN apt install -y \
     mailutils
 
 COPY ./src /var/www/html
+COPY ./docker/db /docker/db
 COPY ./docker/ssl/apache2/000-default.conf /docker/000-default.conf
 COPY ./docker/ssl/apache2/ssl.sh /tmp/init-scripts/ssl.sh
 

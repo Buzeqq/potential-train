@@ -27,7 +27,7 @@ class Website(object):
 
 
 class Customer:
-    WEBSITE = "https://localhost:4433"
+    WEBSITE = "https://localhost:18467"
 
     def __init__(self):
         options = Options()
@@ -94,7 +94,7 @@ class Customer:
         for i in str(quantity):
             amount.send_keys(i)
 
-        sleep(1)
+        sleep(2)
         amount.send_keys(Keys.ENTER)
 
         sleep(1)
