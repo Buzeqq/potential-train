@@ -68,7 +68,7 @@ def get_product_features(prod_data):
 def set_product_fields(csv_data, prod_data):
     csv_data['Show price'] = 1
     csv_data['Available for order'] = 1
-    csv_data['Quantity'] = random.randint(1, 10) if prod_data['colorOptions'][0]['isInStock'] else 0
+    csv_data['Quantity'] = random.randint(10, 100) if prod_data['colorOptions'][0]['isInStock'] else 0
     csv_data['Low stock level'] = 2
     csv_data['Text when in stock'] = "Produkt dostępny"
     csv_data['Text when backorder allowed'] = "Produkt wyprzedany"
